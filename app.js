@@ -31,6 +31,6 @@ app.use("/cart", cartRoute);
 app.use("/order", orderRoute);
 app.use(errorHandler);
 
-app.listen(process.env.PORT, async () => {
+app.listen(process.env.PORT, "192.168.148.43", async () => {
   console.log(`server is running on port :${process.env.PORT}`);
 });
